@@ -1,7 +1,7 @@
 var vue = new Vue({
     el: '#vue',
     data: {
-        title: 'Title',
+        title: 'to do list',
         counter: 0,
         input: '',
         name: [],

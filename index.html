@@ -12,6 +12,7 @@
 
 <body>
     <div id="vue">
+        <h2>{{toUpper(title)}}</h2>
         <div class="input">
             <div class="input-group flex-nowrap">
                 <span class="input-group-text" id="addon-wrapping">@</span>
@@ -24,7 +25,7 @@
         </div>
         <div v-if='name.length === 0'>Здесь ничего нет...</div>
         <div class="posts" v-for='(item, index) in name'>
-            <div>{{index+1}}</div>
+            <div>{{index+1}}.</div>
             <div 
             :style="
             {color:item.title.length > 10 ? 'red': 'black'},
@@ -34,7 +35,7 @@
             <div class="date">{{item.dt}}</div>
             <button type="button" class="btn btn-danger btn-sm" v-on:click='remove(index, $event)'>Remove</button>
         </div>
-        <div class="number">Количество заметок: {{name.length}} | Умножили {{count}} </div>
+        <div class="number">Количество заметок: {{name.length}}</div>
     </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
