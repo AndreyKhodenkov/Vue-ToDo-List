@@ -37,6 +37,5 @@ var vue = new Vue({
                 this.input = ''
             }
         }
-    }
-    
+    }    
 })
